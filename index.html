@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Currículum Vitae</title>
+  <style>
+    :root {
+      --blanco:       #ffffff;
+      --gris-claro:   #f2f4f6;
+      --gris-medio:   #8a8f98;
+      --gris-oscuro:  #2e3338;
+      --acento:       #4a6572;
+      --fuente-base:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #000;
+      color: var(--gris-oscuro);
+      font-family: var(--fuente-base);
+      line-height: 1.6;
+      padding: 20px;
+    }
+    .cv {
+      max-width: 1200px;
+      margin: auto;
+      background: linear-gradient(135deg, var(--blanco) 0%, var(--gris-claro) 100%);
+      border-left: 6px solid var(--acento);
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      background: var(--acento);
+      color: var(--blanco);
+      padding: 30px 50px;
+    }
+    .foto img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid var(--blanco);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    .nombre-titulo h1 {
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+    .nombre-titulo h2 {
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: var(--gris-claro);
+    }
+    main {
+      display: grid;
+      grid-template-columns: 2fr 3fr 2fr;
+      gap: 30px;
+      padding: 40px 50px;
+    }
+    section {
+      background: var(--blanco);
+      border-radius: 8px;
+      padding: 25px;
+      box-shadow: inset 0 2px 6px rgba(0,0,0,0.1);
+    }
+    section ul {
+      list-style: disc inside;
+      margin-bottom: 20px;
+    }
+    section ul li {
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+      color: var(--gris-oscuro);
+    }
+    footer {
+      display: flex;
+      justify-content: space-around;
+      background: var(--acento);
+      color: var(--blanco);
+      padding: 25px 50px;
+      border-top: 1px solid var(--gris-medio);
+    }
+    .contacto {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.95rem;
+    }
+    .contacto svg {
+      width: 24px;
+      height: 24px;
+      filter: invert(1);
+    }
+    @media (max-width: 900px) {
+      main { grid-template-columns: 1fr; }
+      header { flex-direction: column; text-align: center; padding: 25px; }
+      .foto { margin-bottom: 20px; }
+      footer { flex-direction: column; gap: 20px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv">
+    <header>
+      <div class="foto">
+        <img src="foto.jpg.jpg" alt="foto.jpg">
+      </div>
+      <div class="nombre-titulo">
+        <h1>Nadir Alejandro Osses Millar</h1>
+        <h2>Técnico en Gastronomía – Instituto Santo Tomás</h2>
+      </div>
+    </header>
+    <main>
+      <section>
+        <ul>
+          <li>Egresado en Gastronomía del Instituto Santo Tomás con más de 4 años de experiencia en cocina profesional, especializado en creación de menús innovadores y gestión de brigadas.</li>
+          <li>Cocina Internacional</li>
+          <li>Gatstronomia molecular</li>
+          <li>Gestión de Cocina</li>
+          <li>Montaje y Presentación de Platos</li>
+          <li>Seguridad e Higiene Alimentaria</li>
+        </ul>
+      </section>
+      <section>
+        <ul>
+          <li><strong>Cocinero de Partie</strong> – El Bórago (Santiago) | 04/05/2020 – 12/12/2020</li>
+          <li><strong>Subchef</strong> – Quijote (Concepción) | 01/02/2001 – 14/09/2021</li>
+          <li><strong>Encargado de Cuarto Caliente</strong> – Mercure (Concepción) | 03/12/2021 – 02/02/2022</li>
+          <li><strong>Chef Ejecutivo</strong> – Árbol (Pitrufquén) | 04/03/2022 – 08/10/2022</li>
+          <li><strong>Chef de Cocina</strong> – Marengo (Pitrufquén) | 04/03/2023 – 14/02/2025</li>
+        </ul>
+      </section>
+      <section>
+        <ul>
+          <li>Técnico en Gastronomía – Instituto Santo Tomás</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div class="contacto">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+          <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5"/>
+          <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85z"/>
+        </svg>
+        <p>nadir.osses@ejemplo.com</p>
+      </div>
+      <div class="contacto">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+          <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+          <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+        </svg>
+        <p>+56 9 1234 5678</p>
+      </div>
+      <div class="contacto">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-map" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.5.5 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103M10 1.91l-4-.8v12.98l4 .8zm1 12.98 4-.8V1.11l-4 .8zm-6-.8V1.11l-4 .8v12.98z"/>
+        </svg>
+        <p>Santiago, Chile</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
